@@ -1,0 +1,37 @@
+{% extends "template.twig" %}
+
+{% block body %}
+    
+    <section id="articles">
+        {% for item in article %}
+            <figure>
+                <a href="/articles/{{item.id}}"))}}> <img src={{item.image}} alt="img"> </a>
+                <figcaption>
+                    <a href="/articles/{{item.id}}"))}}> <h2>{{item.title}}</h2> </a>
+                </figcaption>
+            </figure>
+        {% endfor %}
+    </section>
+
+    <section id="create">
+        <form method="post">
+            <label for="title"> <h2>Titre</h2></label>
+            <input type="text" name="title" id="title" required>
+
+            <label for="select"> <h2>Image</h2> </label>
+            <select name="image" id="image"> 
+
+                {% for item in image %}
+                    <option value={{ item.url }}> {{ item.url }}</option>
+                {% endfor %}
+                
+            </select>
+
+            <label for="content"><h2>Texte</h2></label>
+            <textarea name="content" id="content" required></textarea>
+            <button id="buttonSubmit" type="submit">Envoyer</button>
+        </form>
+    </section>
+{% endblock %}
+
+    

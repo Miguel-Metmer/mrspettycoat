@@ -1,0 +1,15 @@
+{% extends "template.twig" %}
+
+
+{% block body %}
+
+
+<section id="article">
+    {% for item in data %}
+        <h2>{{item.article_Title}}</h2>
+        <img src={{item.article_Image}} alt="img">
+        <p>{{item.article_Content}}</p>
+    {% endfor %}
+</section>
+
+{% endblock %}

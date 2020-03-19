@@ -1,0 +1,150 @@
+@keyframes animation-title
+{
+    0%
+    {
+
+    }
+}
+
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color: #333;
+    box-shadow: 0 2px 10px 2px black;
+}
+
+header h1
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+}
+
+header h1 a
+{
+    display: flex;
+    width: 10%;
+    padding: 2%;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+#create
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#create form
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width:  50%;
+    margin-top: 2%;
+}
+
+#create form label
+{
+    font-weight: bold;
+}
+
+#create form input
+{
+    font-size: large;
+}
+
+#create form textarea
+{
+
+    font-size: medium;
+    height: 250px;
+    resize: none;
+}
+
+#create form button
+{
+    width: 25%;
+    height: 50px;
+    margin: 2% auto;
+}
+
+#articles
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 92%;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+figure 
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    position: relative;
+    background-color: white;
+}
+
+figure img
+{
+    display: block;
+    width: 400px;
+    height: 280px;
+}
+
+figure figcaption
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(5, 5, 5, 0.644);
+}
+
+figure:hover > figcaption > a
+{
+    color: royalblue;
+}
+
+figure figcaption a
+{
+    text-decoration: none;
+    color: white;
+}
+
+figure figcaption:hover > a
+{
+    color: royalblue;
+}
+
+figure figcaption h2
+{
+    margin: 0;
+    margin-left: 1%;
+}
+
+#article
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#article img
+{
+
+    max-width: 50%;
+    align-self: center;
+    border: 2px solid black;
+}
